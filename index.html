@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2{
+    text-align: center;
+}
+body{
+    font-family: cursive;
+    font-weight: bold;
+}
+nav{
+    width:100%;
+    height:50px;
+    background-color: paleturquoise;
+    margin-top: -20px;
+}
+li{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+header{
+    width:100%;
+    height:50px;
+    background-color:palevioletred ;
+}
+
+#winners,#honours{
+    display: none;
+   
+}
+#image{
+    width: 40%;
+    float: right;
+    margin-top: -2px;  
+}
+img{
+    width: 50%;
+}
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+h1{
+    text-align: center;
+  
+}
+
+
+</style>
+
+<script>
+function bookweek(){
+    document.getElementById("bookweek").style.display="block";
+     document.getElementById("winners").style.display="none";
+      document.getElementById("honours").style.display="none";
+}
+
+function winners(){
+    document.getElementById("bookweek").style.display="none";
+     document.getElementById("winners").style.display="block";
+      document.getElementById("honours").style.display="none";
+}
+
+function honours(){
+    document.getElementById("bookweek").style.display="none";
+     document.getElementById("winners").style.display="none";
+      document.getElementById("honours").style.display="block";
+}
+function h(){
+    document.getElementById("bookweek").style.display="none";
+     document.getElementById("winners").style.display="none";
+      document.getElementById("honours").style.display="block";
+}
+
+</script>
+</head>
+    <body>
+        <center>
+            <header>
+                 <h1>Book Barn</h1>
+            </header>
+            <nav>
+                <ul>
+                     <li onclick="bookweek()"> Home</li>
+                    <li onclick="winners()"> Winners</li>
+                    <li onclick="honours()"> Honours</li>
+                </ul>
+            </nav>
+        </center>
+
+        <!--BOOK WEEK-->
+
+        <div id="bookweek">
+            <div id="content">       
+                <h2>CBCA Book Week</h2>
+          
+                <p>Each year since 1945 the CBCA has brought children and books together across Australia through CBCA Book Week. During this time schools and public libraries spend one glorious week celebrating books and Australian children's authors and illustrators. Classroom teachers, teacher librarians and public librarians create colourful displays, develop activities, run competitions and tell stories relating to a theme to highlight the importance of reading. You will often see parades with students dressed as their favourite book character.</p>
+            </div>
+            
+            <div>
+
+                <img src="https://cbca.blob.core.windows.net/media/Default/Book%20Week%20Themes/2022%20CBCA%20Book%20Week%20poster.png" width="200px" id="image">
+               
+           <iframe width="55%" height="315" src="https://www.youtube.com/embed/mu5GJBb3B5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        </div>
+
+
+        <!--WINNERS-->
+
+         <div id="winners">
+              <div id="content">
+                  <center>
+                    <h2>Winners For Older Readers</h2>
+                    <div id="image1">
+                  <img id="i1" src="https://cbca.blob.core.windows.net/images/Covers/2022/OR/OR_Tiger%20Daughter.jpg" >  
+                  <h2>Winners For Younger Readers</h2>
+                  <img src="https://cbca.blob.core.windows.net/images/Covers/2022/YR/YR_A%20Glasshouse%20of%20Stars.jpg" id="i2">
+                  <h2>Early Childhood</h2>
+                  <img src="https://cbca.blob.core.windows.net/images/Covers/2022/EC/EC_Jetty%20Jumping.jpg" id="i3">
+                  <h2>Picture Book Of The Year</h2> 
+                  <img src="https://cbca.blob.core.windows.net/images/Covers/2022/PB/PB_Iceberg.jpg" id="i4">
+                  </center>
+                    </div>
+              </div>
+         </div>
+
+         <!--HONOURS-->
+
+           <div id="honours">
+             
+                  <center>
+                  <h1> Honours</h1>
+                     <h1>Older Readers</h1>
+
+                    <div id="image2">
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/OR/OR_Girls%20in%20Boys%20Cars.jpg" height="500px" class="left" > 
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/OR/OR_How%20to%20Repaint%20a%20LIfe.jpg" height="500px" class="right" >
+                    </div>
+                    <br><BR><br>
+               
+                <h1>Younger Readers</h1>
+              
+                    <div id="image3">
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/YR/YR_Dragon%20Skin.jpg" height="500px" class="left"> 
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/YR/YR_Rabbit%20Soldier%20Angel%20Thief.jpg" height="500px"class="right" >
+                    </div>
+               <br><BR>
+                <h1>
+                   Early Childhood
+                </h1>
+                    <div id="image4">
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/EC/EC_Walk%20of%20the%20Whales.jpg" height="500px" class="left"> 
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/EC/EC_Amiras%20Suitcase.jpg" height="500px" class="right" >
+                    </div>
+
+
+                <h1>
+               Picture Book Of The Year
+                </h1>
+                    <div id="image4">
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/PB/PB_Stellarphant.jpg" height="500px" class="left"> 
+                        <img src="https://cbca.blob.core.windows.net/images/Covers/2022/PB/PB_Just%20One%20Bee.jpg" height="500px" class="right" >
+                    </div>
+              </div>  
+                    
+                  
+              </div>  
+
+
+            
